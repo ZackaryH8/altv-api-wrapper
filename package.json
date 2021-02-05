@@ -1,0 +1,45 @@
+{
+  "name": "altv-api-wrapper",
+  "version": "1.0.0",
+  "description": "NodeJS Wrapper for the alt:V masterlist API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "prepublish": "tsc",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build-docs": "typedoc --options",
+    "watch": "nodemon dist/index.js"
+  },
+  "keywords": [
+    "tfl",
+    "api",
+    "wrapper",
+    "typescript"
+  ],
+  "author": "zackaryh8",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.7",
+    "@types/xml2js": "^0.4.8",
+    "typedoc": "^0.20.14",
+    "typedoc-theme-dark": "0.0.5",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZackaryH8/altv-api-wrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZackaryH8/altv-api-wrapper/issues"
+  },
+  "homepage": "https://github.com/ZackaryH8/altv-api-wrapper#readme"
+}

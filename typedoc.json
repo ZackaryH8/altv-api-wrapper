@@ -1,0 +1,9 @@
+{
+  "name": "TfL API Wrapper",
+  "entryPoints": [
+    "./index.ts"
+  ],
+  "out": "docs",
+  "theme": "./node_modules/typedoc-theme-dark/dist/dark/",
+  "readme": "none"
+}
