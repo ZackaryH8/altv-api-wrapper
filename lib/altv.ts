@@ -20,30 +20,4 @@ export default class altAPI {
         const fetchReq = await fetch(FullURL, options);
         return await fetchReq.json();
     }
-
-
-    /**
-     * @ignore
-     */
-    objectToQuery(params: any): string {
-        const x = Object.keys(params)
-            .map((key) => key + '=' + params[key])
-            .join('&');
-        console.log(x);
-        return x;
-    }
-
-    /**
-     * @ignore
-     */
-    arrayToCSV(arr: Array<string | number>) {
-        return arr.join(',');
-    }
-
-    /**
-     * @ignore
-     */
-    convertDate(oldDate: Date | undefined): string {
-        return oldDate?.toISOString().split('.')[0] + 'Z';
-    }
 }
