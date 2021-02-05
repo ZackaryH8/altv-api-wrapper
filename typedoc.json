@@ -1,5 +1,5 @@
 {
-  "name": "TfL API Wrapper",
+  "name": "alt:V API Wrapper",
   "entryPoints": [
     "./index.ts"
   ],
