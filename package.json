@@ -14,7 +14,7 @@
     "watch": "nodemon dist/index.js"
   },
   "keywords": [
-    "tfl",
+    "altv",
     "api",
     "wrapper",
     "typescript"
