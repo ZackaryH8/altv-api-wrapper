@@ -1,6 +1,6 @@
 {
   "name": "altv-api-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS Wrapper for the alt:V masterlist API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
