@@ -23,16 +23,29 @@ There are many ways to contribute to this repo.
 
 ## Example Usage
 
-### Get Server By ID
+### Get Server By Host
 
+#### Callback
 ```js
 import { Masterlist } from 'altv-api-wrapper';
 
 const masterlist = new Masterlist()
 
-masterlist.getServerByID('xxxx').then((result) => {
+masterlist.getServerByHost('xxxx').then((result) => {
     console.log(result)
 })
+```
+
+#### Async... await
+```js
+import { Masterlist } from 'altv-api-wrapper';
+
+const masterlist = new Masterlist()
+
+async function getServerByHost() {
+    const server = await masterlist.getServerByHost('xxxx');
+    console.log(server)
+}
 ```
 
 ## Disclaimer
