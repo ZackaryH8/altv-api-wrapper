@@ -14,6 +14,11 @@ export default class MasterList extends altAPI {
         return await this.sendRequest(`/server/${id}`, {}, 'GET');
     }
 
+    async getServerByName(host: string): Promise<IAltAPI.SpecificServer.RootObject> {
+        const serverList = await this.sendRequest(`/servers/list`, {}, 'GET')
+        return serverList.find((server: IAltAPI.ServerList) => server.host === host);
+    }
+
     async getServerAverageByID(id: string, time: string): Promise<IAltAPI.AvgMax> {
         return await this.sendRequest(`/avg/${id}/${time}`, {}, 'GET');
     }
