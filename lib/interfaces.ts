@@ -3,7 +3,7 @@ export interface CombinedStats {
     playersCount: number;
 }
 
-export interface ServerList {
+export interface ServerList extends Array<any> {
     id: string;
     maxPlayers: number;
     players: number;
@@ -29,7 +29,6 @@ export interface ServerList {
     version: string;
     lastUpdate: any;
 }
-
 
 export declare module SpecificServer {
     export interface Info {
@@ -63,8 +62,6 @@ export declare module SpecificServer {
         info: Info;
     }
 }
-
-
 
 export interface AvgMax {
     t: number;
