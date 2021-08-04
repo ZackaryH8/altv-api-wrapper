@@ -6,7 +6,7 @@ export default class MasterList extends altAPI {
         return await this.sendRequest('/servers', {}, 'GET');
     }
 
-    static async getServerList(): Promise<IAltAPI.ServerList> {
+    static async getServerList(): Promise<IAltAPI.ServerList[]> {
         return await this.sendRequest('/servers/list', {}, 'GET');
     }
 

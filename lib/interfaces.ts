@@ -3,7 +3,7 @@ export interface CombinedStats {
     playersCount: number;
 }
 
-export interface ServerList extends Array<any> {
+export interface ServerList {
     id: string;
     maxPlayers: number;
     players: number;
